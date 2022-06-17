@@ -1,0 +1,27 @@
+span {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+.style1,
+.style2 {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: gray;
+}
+
+.style2 {
+  background-color: goldenrod;
+}
+
+li{
+  list-style: none;
+  padding: 5px;
+}

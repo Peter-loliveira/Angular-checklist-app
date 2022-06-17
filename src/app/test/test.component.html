@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+
+
+</style>
+
+<body> 
+	<p> {{stringInterpolation}} </p>
+	<span>Desabilitar botão por função</span>
+	<div>
+		<button (click)='disableButton()'> {{buttonTexts[0]}} </button>
+		<button [disabled]='isDisabled'>Botão 1</button>
+	</div>
+	<hr>
+	<span>Botões Acrescer / Decrescer</span>
+	<div>
+		<button (click)="dec()">-</button>
+		<p> {{initialValor}} </p>
+		<button (click)="inc()">+</button>
+	</div>
+	<hr>
+	<span>Two Way Data Bind</span>
+	<div>
+		<label for="">Input Test</label>
+		<input type="text" [(ngModel)]='myBindProperty'>
+		<label for="">Resultado do Imput</label>
+		<input [disabled]=1 value={{myBindProperty}}>
+	</div>
+	<hr>
+	<span>ngIf</span>
+	<div>
+		<button (click)="exibirBotao()">Exibir botão</button>
+		<button *ngIf="exibirBt">Botaõ Exibido</button>
+	</div>
+	
+	<hr>
+	<span>ngFor</span>
+	<div>
+		<ul>
+			<li *ngFor="let item of itens" [ngClass]="item.id % 2 ? 'style1' :'style2'" >
+				{{item.id}}: {{item.Animal}}
+			</li>
+		</ul>
+	</div>
+
+</body>
+
+</html>
