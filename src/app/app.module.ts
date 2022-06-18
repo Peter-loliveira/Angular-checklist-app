@@ -7,12 +7,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CategoryComponent } from './category/category.component';
 import { TestComponent } from './test/test.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { MaterialModule } from './material.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
-    TestComponent
+    TestComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +25,8 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,
 // Imports do projeto em si
     FormsModule, //Modulo necessário para funcionar o ngModel
+    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
