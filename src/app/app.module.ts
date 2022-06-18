@@ -23,10 +23,10 @@ import { FooterComponent } from './footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-// Imports do projeto em si
+    // Imports do projeto em si
     FormsModule, //Modulo necessário para funcionar o ngModel
-    MaterialModule
-    
+    MaterialModule, //Modulo de importação do Angular Material
+
   ],
   providers: [],
   bootstrap: [AppComponent]
