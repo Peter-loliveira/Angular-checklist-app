@@ -7,8 +7,10 @@ import { CategoriaComponent } from './categoria/categoria.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
+  {path:'categoria', component: CategoriaComponent},
+
+  // ULTIMO PATH A SER USADO
   {path:'**', component: PageNotFoundComponent},
-  {path:'./category', component: CategoriaComponent},
 ];
 
 @NgModule({
