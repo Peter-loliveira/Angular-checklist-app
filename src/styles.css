@@ -10,3 +10,15 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .ml-15{
     margin-left: 15px;  
 }
+
+.m-20{
+    margin: 20px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.mr-10{
+    margin-right: 10px !important;
+}
